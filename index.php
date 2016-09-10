@@ -10,8 +10,8 @@
 	<meta name="author" content="สภานักเรียนอัสสัมชัญสมุทรปราการ"/>
 	<meta property="og:type" content="website"/>
 	<meta property="og:author" content="https://www.facebook.com/ACPowerParty"/>
-	<meta property="og:image" content="http://acspsc.com/pd3/img/og_image.png"/>
-	<meta property="og:url" content="http://acspsc.com/pd3/"/>
+	<meta property="og:image" content="http://acspsc.com/img/og_image.png"/>
+	<meta property="og:url" content="http://acspsc.com/"/>
 	<meta name="theme-color" content="#ff1e00"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<!-- CODED BY เก่งมากเจ้าโดบะ & Wiput Development-->
