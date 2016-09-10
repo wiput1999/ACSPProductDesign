@@ -8,12 +8,20 @@
 
         $stmt->bindParam(1,$id,PDO::PARAM_STR);
         $stmt->execute();
-        $data = $stmt->fetch(PDO::FETCH_ASSOC);
 
-        $name = $data['fname']." ".$data['lname'];
+        if ( $stmt->rowCount() == 1 ) { // exist
+            echo "notfound";
+        }
+        else {
+        	$data = $stmt->fetch(PDO::FETCH_ASSOC);
 
-        echo $name;
+	        $name = $data['fname']." ".$data['lname'];
 
+	        echo $name;
+        }
+    }
+    else {
+    	echo "failed";
     }
 
 ?>
