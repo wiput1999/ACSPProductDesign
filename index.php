@@ -70,7 +70,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="vote">
+	<!-- <div class="vote">
 		<div class="uk-container uk-container-center">
 			<form class="uk-form" method="post">
 				<div class="uk-grid uk-grid-medium">
@@ -110,7 +110,7 @@
 				</div>
 			</form>
 		</div>
-	</div>
+	</div> -->
 	<script src="js/jquery.min.js"></script>
 	<script src="js/uikit.min.js"></script>
 	<script src="js/components/lightbox.min.js"></script>
