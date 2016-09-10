@@ -34,7 +34,7 @@
 	<div class="votes-open">
 		<center><img src="img/votes_open.png" class="text" /></center>
 	</div>
-	<div class="uk-container uk-container-center">
+	<!-- <div class="uk-container uk-container-center">
 		<div class="uk-grid">
 			<div class="uk-width-medium-1-2">
 				<figure class="uk-overlay uk-overlay-hover">
@@ -70,7 +70,7 @@
 			</div>
 		</div>
 	</div>
-	<!-- <div class="vote">
+	<div class="vote">
 		<div class="uk-container uk-container-center">
 			<form class="uk-form" method="post">
 				<div class="uk-grid uk-grid-medium">
