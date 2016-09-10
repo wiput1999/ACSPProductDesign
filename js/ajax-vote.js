@@ -34,14 +34,10 @@ function vote () {
 								success: function(result){
 									switch (result) {
 										case "success" :
-										setTimeout(function(){
 											swal("โหวตสำเร็จ", "ขอบคุณสำหรับความร่วมมือครับ :D", "success");
-										}, 500);
 										break;
 										case "failed" :
-										setTimeout(function(){
 											swal("โหวตไม่สำเร็จ", "ห้ามโหวตซ้ำนะครับ :(", "error");
-										}, 500);
 									}
 								}
 							});
