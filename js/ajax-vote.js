@@ -24,8 +24,7 @@ function vote () {
 						confirmButtonColor: "#A5DC86",
 						confirmButtonText: "ตกลง",
 						cancelButtonText: "แก้ไขข้อมูล",
-						closeOnConfirm: false,
-						closeOnCancel: false,
+						showLoaderOnConfirm: true,
 						showLoaderOnConfirm: true }).then(function() {
 							$.ajax({
 								type: 'POST',
