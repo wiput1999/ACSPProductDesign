@@ -1,0 +1,47 @@
+.hero {
+    background: #ff0000;
+    padding: 50px 0 50px 0;
+}
+.hero img.logo {
+    max-width: 300px;
+    width: 80%;
+}
+.hero img.hero {
+    max-width: 600px;
+    width: 80%;
+}
+.hero iframe.video {
+	background: #000;
+	width: 90%;
+	max-width: 900px;
+	height: 500px;
+}
+.none {
+    display: none;
+}
+.votes-open {
+    background: #212121;
+    padding: 40px 0 40px 0;
+    margin-bottom: 30px;
+    border-top: 10px solid #FFF;
+    border-bottom: 5px solid #ff0000;
+}
+.votes-open img.text {
+    max-width: 400px;
+    width: 90%;
+}
+.vote {
+    background: #ff0000;
+    margin-top: 15px;
+    padding: 50px 0 50px 0;
+    color: #FFF;
+}
+.vote h2 {
+    color: #FFF;
+    margin-top: 10px;
+}
+footer {
+    background: #212121;
+    padding: 30px 20px 30px 20px;
+    color: #FFF;
+}
