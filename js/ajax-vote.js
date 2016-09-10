@@ -45,7 +45,7 @@ function vote () {
 							if (dismiss === 'cancel') {
 								swal("ยกเลิกแล้ว", "กรุณาตรวจสอบข้อมูลใหม่ดีๆนะครับ :)", "error");
 							}
-						});
+						}).showLoading();
 					}
 				}
 			});
