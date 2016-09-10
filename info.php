@@ -9,7 +9,7 @@
         $stmt->bindParam(1,$id,PDO::PARAM_STR);
         $stmt->execute();
 
-        if ( $stmt->rowCount() == 1 ) { // exist
+        if ( $stmt->rowCount() != 1 ) { // exist
             echo "notfound";
         }
         else {
