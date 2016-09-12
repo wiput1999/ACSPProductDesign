@@ -34,7 +34,7 @@
 	<div class="votes-open">
 		<center><img src="img/votes_open.png" class="text" /></center>
 	</div>
-	<!-- <div class="uk-container uk-container-center">
+	<div class="uk-container uk-container-center">
 		<div class="uk-grid">
 			<div class="uk-width-medium-1-2">
 				<figure class="uk-overlay uk-overlay-hover">
@@ -110,7 +110,7 @@
 				</div>
 			</form>
 		</div>
-	</div> -->
+	</div>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/uikit.min.js"></script>
 	<script src="js/components/lightbox.min.js"></script>
