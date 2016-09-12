@@ -3,7 +3,7 @@ function vote () {
 	var style	=	$('#style').val();
 
 	if (style == 0) {
-		swal("โหวตไม่สำเร็จ", "กรุณาเลือกตัวเลือกที่จะโหวตด้วยครับ :(", "error");
+		swal("โหวตไม่สำเร็จ", "กรุณาเลือกตัวเลือกที่จะโหวตด้วยครับ :(", "error").enableLoading();
 	}
 	else {
 		$.ajax({
@@ -13,7 +13,7 @@ function vote () {
 			data: { 'id' : id },
 			success: function(result){
 				if( result == "notfound" ) {
-					swal("โหวตไม่สำเร็จ", "ไม่พบรหัสประจำตัวที่ท่านระบุครับ :(", "error");
+					swal("โหวตไม่สำเร็จ", "ไม่พบรหัสประจำตัวที่ท่านระบุครับ :(", "error").enableLoading();
 				}
 				else {
 					swal({
@@ -34,18 +34,18 @@ function vote () {
 								success: function(result){
 									switch (result) {
 										case "success" :
-											swal("โหวตสำเร็จ", "ขอบคุณสำหรับความร่วมมือครับ :D", "success");
+											swal("โหวตสำเร็จ", "ขอบคุณสำหรับความร่วมมือครับ :D", "success").enableLoading();
 										break;
 										case "failed" :
-											swal("โหวตไม่สำเร็จ", "ห้ามโหวตซ้ำนะครับ :(", "error");
+											swal("โหวตไม่สำเร็จ", "ห้ามโหวตซ้ำนะครับ :(", "error").enableLoading();
 									}
 								}
 							});
 						}, function(dismiss) {
 							if (dismiss === 'cancel') {
-								swal("ยกเลิกแล้ว", "กรุณาตรวจสอบข้อมูลใหม่ดีๆนะครับ :)", "error");
+								swal("ยกเลิกแล้ว", "กรุณาตรวจสอบข้อมูลใหม่ดีๆนะครับ :)", "error").enableLoading();
 							}
-						}).showLoading();
+						}).enableLoading();
 					}
 				}
 			});
