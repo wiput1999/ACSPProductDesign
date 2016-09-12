@@ -3,7 +3,12 @@ function vote () {
 	var style	=	$('#style').val();
 
 	if (style == 0) {
-		swal("โหวตไม่สำเร็จ", "กรุณาเลือกตัวเลือกที่จะโหวตด้วยครับ :(", "error").enableLoading();
+		swal({
+			title: "โหวตไม่สำเร็จ",
+			text : "กรุณาเลือกตัวเลือกที่จะโหวตด้วยครับ :(",
+			type : "error",
+			allowOutsideClick: false
+		});
 	}
 	else {
 		$.ajax({
@@ -13,7 +18,12 @@ function vote () {
 			data: { 'id' : id },
 			success: function(result){
 				if( result == "notfound" ) {
-					swal("โหวตไม่สำเร็จ", "ไม่พบรหัสประจำตัวที่ท่านระบุครับ :(", "error").enableLoading();
+					swal({
+						title: "โหวตไม่สำเร็จ",
+						text : "ไม่พบรหัสประจำตัวที่ท่านระบุครับ :(",
+						type : "error",
+						allowOutsideClick: false
+					});
 				}
 				else {
 					swal({
@@ -25,6 +35,7 @@ function vote () {
 						confirmButtonText: "ตกลง",
 						cancelButtonText: "แก้ไขข้อมูล",
 						showLoaderOnConfirm: true,
+						allowOutsideClick: false,
 						showLoaderOnConfirm: true }).then(function() {
 							$.ajax({
 								type: 'POST',
@@ -34,18 +45,33 @@ function vote () {
 								success: function(result){
 									switch (result) {
 										case "success" :
-											swal("โหวตสำเร็จ", "ขอบคุณสำหรับความร่วมมือครับ :D", "success").enableLoading();
+											swal({
+												title: "โหวตสำเร็จ",
+												text : "ขอบคุณสำหรับความร่วมมือครับ :D",
+												type : "success",
+												allowOutsideClick: false
+											});
 										break;
 										case "failed" :
-											swal("โหวตไม่สำเร็จ", "ห้ามโหวตซ้ำนะครับ :(", "error").enableLoading();
+											swal({
+												title: "โหวตไม่สำเร็จ",
+												text : "ห้ามโหวตซ้ำนะครับ :(",
+												type : "error",
+												allowOutsideClick: false
+											});
 									}
 								}
 							});
 						}, function(dismiss) {
 							if (dismiss === 'cancel') {
-								swal("ยกเลิกแล้ว", "กรุณาตรวจสอบข้อมูลใหม่ดีๆนะครับ :)", "error").enableLoading();
+								swal({
+									title: "ยกเลิกแล้ว",
+									text : "กรุณาตรวจสอบข้อมูลใหม่ดีๆนะครับ :)",
+									type : "error",
+									allowOutsideClick: false
+								});
 							}
-						}).enableLoading();
+						});
 					}
 				}
 			});
