@@ -14,6 +14,7 @@
 	<meta property="og:url" content="http://acspsc.com/"/>
 	<meta name="theme-color" content="#ff1e00"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="icon" href="img/logo.png">
 	<!-- CODED BY เก่งมากเจ้าโดบะ & Wiput Development-->
 </head>
 <body>
