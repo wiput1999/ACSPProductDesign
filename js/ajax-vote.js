@@ -28,7 +28,7 @@ function vote () {
 				else {
 					swal({
 						title: "กรุณาตรวจสอบข้อมูลให้ถูกต้อง",
-						html: "<img src='https://cdn.wiput.me/acsp/" + id + ".jpg' style='max-width: 40% !important; min-height: 217px !important;'><br><br>เลขประจำตัว : " + id + "<br>ชื่อ : " + result + "<br><b>หากโหวตแล้วจะไม่สามารถแก้ไขข้อมูลได้</b>",
+						html: "<img src='https://cdn.wiput.me/acsp/" + id + ".jpg' style='min-height: 217px !important;'><br><br>เลขประจำตัว : " + id + "<br>ชื่อ : " + result + "<br><b>หากโหวตแล้วจะไม่สามารถแก้ไขข้อมูลได้</b>",
 						type: "warning",
 						showCancelButton: true,
 						confirmButtonColor: "#A5DC86",
