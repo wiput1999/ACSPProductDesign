@@ -64,12 +64,7 @@ function vote () {
 							});
 						}, function(dismiss) {
 							if (dismiss === 'cancel') {
-								swal({
-									title: "ยกเลิกแล้ว",
-									text : "กรุณาตรวจสอบข้อมูลใหม่ดีๆนะครับ :)",
-									type : "error",
-									allowOutsideClick: false
-								});
+								
 							}
 						});
 					}
