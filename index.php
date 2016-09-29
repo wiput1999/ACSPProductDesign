@@ -30,7 +30,6 @@
 		</div>
 		<center><img src="img/logo.png" class="logo" /></center>
 		<center><img src="img/hero.png" class="hero" /></center>
-		<center><iframe class="video" src="https://www.youtube.com/embed/Ny4n2VZ1-xA?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe></center>
 	</div>
 	<div class="votes-open">
 		<center><img src="img/votes_closed.png" class="text" /></center>
