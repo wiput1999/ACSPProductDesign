@@ -41,7 +41,7 @@
 				<figure class="uk-overlay uk-overlay-hover">
 					<a href="img/v1_full.jpg" data-uk-lightbox="{group:'style'}">
 						<img class="uk-thumbnail" src="img/v1_thumb.jpg" width="100%" />
-						<img class="uk-thumbnail uk-overlay-panel uk-overlay-image uk-overlay-fade" src="img/v1_thumb_h.jpg" width="100%" />
+						<img class="uk-thumbnail uk-overlay-panel uk-overlay-image uk-overlay-fade" src="img/v1_thumb_h.png" width="100%" />
 					</a>
 				</figure>
 			</div>
@@ -49,7 +49,7 @@
 				<figure class="uk-overlay uk-overlay-hover">
 					<a href="img/v2_full.jpg" data-uk-lightbox="{group:'style'}">
 						<img class="uk-thumbnail" src="img/v2_thumb.jpg" width="100%" />
-						<img class="uk-thumbnail uk-overlay-panel uk-overlay-image uk-overlay-fade" src="img/v2_thumb_h.jpg" width="100%" />
+						<img class="uk-thumbnail uk-overlay-panel uk-overlay-image uk-overlay-fade" src="img/v2_thumb_h.png" width="100%" />
 					</a>
 				</figure>
 			</div>
@@ -57,7 +57,7 @@
 				<figure class="uk-overlay uk-overlay-hover">
 					<a href="img/v3_full.jpg" data-uk-lightbox="{group:'style'}">
 						<img class="uk-thumbnail" src="img/v3_thumb.jpg" width="100%" />
-						<img class="uk-thumbnail uk-overlay-panel uk-overlay-image uk-overlay-fade" src="img/v3_thumb_h.jpg" width="100%" />
+						<img class="uk-thumbnail uk-overlay-panel uk-overlay-image uk-overlay-fade" src="img/v3_thumb_h.png" width="100%" />
 					</a>
 				</figure>
 			</div>
@@ -65,7 +65,7 @@
 				<figure class="uk-overlay uk-overlay-hover">
 					<a href="img/v4_full.jpg" data-uk-lightbox="{group:'style'}">
 						<img class="uk-thumbnail" src="img/v4_thumb.jpg" width="100%" />
-						<img class="uk-thumbnail uk-overlay-panel uk-overlay-image uk-overlay-fade" src="img/v4_thumb_h.jpg" width="100%" />
+						<img class="uk-thumbnail uk-overlay-panel uk-overlay-image uk-overlay-fade" src="img/v4_thumb_h.png" width="100%" />
 					</a>
 				</figure>
 			</div>

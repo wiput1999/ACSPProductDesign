@@ -6154,7 +6154,7 @@ a.uk-thumbnail:focus {
 }
 .uk-overlay-hover:hover .uk-overlay-fade,
 .uk-overlay-active .uk-active > .uk-overlay-fade {
-  opacity: 1;
+  opacity: 0.5;
 }
 /*
  * Scale
