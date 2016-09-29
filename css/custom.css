@@ -22,9 +22,7 @@
 .votes-open {
     background: #212121;
     padding: 40px 0 40px 0;
-    margin-bottom: 30px;
     border-top: 10px solid #FFF;
-    border-bottom: 5px solid #ff0000;
 }
 .votes-open img.text {
     max-width: 400px;
