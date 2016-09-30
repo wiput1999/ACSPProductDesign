@@ -19,15 +19,6 @@
 </head>
 <body>
 	<div class="hero">
-		<div class="uk-container uk-container-center none" id="n_failed">
-			<div class="uk-alert uk-alert-large uk-alert-danger uk-animation-shake">โหวตไม่สำเร็จ</div>
-		</div>
-		<div class="uk-container uk-container-center none" id="n_failed">
-			<div class="uk-alert uk-alert-large uk-alert-danger uk-animation-shake">คุณโหวตไปแล้ว</div>
-		</div>
-		<div class="uk-container uk-container-center none" id="n_success">
-			<div class="uk-alert uk-alert-large uk-alert-success uk-animation-slide-top">โหวตเรียบร้อย</div>
-		</div>
 		<center><img src="img/logo.png" class="logo" /></center>
 		<center><img src="img/hero.png" class="hero" /></center>
 	</div>
