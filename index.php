@@ -4,7 +4,6 @@
 	<title>ACSP Product Design #4</title>
 	<link rel="stylesheet" href="css/custom.css" />
 	<link rel="stylesheet" href="css/uikit.almost-flat.css" />
-	<link rel="stylesheet" type="text/css" href="css/sweetalert2.min.css">
 	<meta charset="utf-8" />
 	<meta name="description" content="ร่วมโหวตเสื้อกันหนาวโรงเรียนในโครงการ ACSP Product Design ปีที่ 4" />
 	<meta name="author" content="สภานักเรียนอัสสัมชัญสมุทรปราการ"/>
@@ -37,8 +36,6 @@
 	<script src="js/jquery.min.js"></script>
 	<script src="js/uikit.min.js"></script>
 	<script src="js/components/lightbox.min.js"></script>
-	<script src="js/sweetalert2.min.js"></script>
-	<script src="js/ajax-vote.js"></script>
 	<footer>
 		<center>สภานักเรียน</center>
 	</footer>
