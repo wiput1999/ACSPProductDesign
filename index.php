@@ -15,6 +15,7 @@
 	<meta name="theme-color" content="#ff1e00"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="icon" href="img/logo.png">
+	<script src='https://www.google.com/recaptcha/api.js'></script>
 	<!-- CODED BY เก่งมากเจ้าโดบะ & Wiput Development-->
 </head>
 <body>
@@ -82,7 +83,10 @@
 								<input type="text" placeholder="เลขประจำตัวนักเรียน 5 หลัก" name="id" id="id" class="uk-form-large uk-width-1-1">
 							</div>
 							<div class="uk-form-row">
-								<a class="uk-button uk-button-primary uk-button-large uk-width-1-1" type="submit" name="submit" onclick="vote()">ส่งข้อมูล</a>
+								<div class="g-recaptcha" data-callback="recaptchaCallback" data-sitekey="6LfBEggUAAAAAID6nmYfMzuRB_1W0jYMTeSZJ995"></div>
+							</div>
+							<div class="uk-form-row">
+								<a class="uk-button uk-button-primary uk-button-large uk-width-1-1" id="btn-send" type="submit" name="submit" onclick="vote()" style="display: none;">ส่งข้อมูล</a>
 							</div>
 						</fieldset>
 					</div>
@@ -102,6 +106,15 @@
 			</form>
 		</div>
 	</div>
+	<script type="text/javascript">
+		function recaptchaCallback() {
+			var v = grecaptcha.getResponse();
+			if(v.length != 0)
+	    	{
+		    	$('#btn-send').show();
+		    }
+		};
+	</script>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/uikit.min.js"></script>
 	<script src="js/components/lightbox.min.js"></script>

@@ -1,6 +1,7 @@
 function vote () {
 	var id 		=	$('#id').val();
 	var style	=	$('#style').val();
+	var capcha	=	grecaptcha.getResponse().length;
 
 	if (style == 0) {
 		swal({
@@ -15,12 +16,21 @@ function vote () {
 			type: 'POST',
 			url: 'info.php',
 			cache: false,
-			data: { 'id' : id },
+			data: { 'id' : id , 'capcha' : capcha},
 			success: function(result){
 				if( result == "notfound" ) {
 					swal({
 						title: "โหวตไม่สำเร็จ",
 						text : "ไม่พบรหัสประจำตัวที่ท่านระบุครับ :(",
+						type : "error",
+						allowOutsideClick: false
+					});
+				}
+				//Capcha error
+				else if ( result == "err_capcha") {
+					swal({
+						title: "Invalid Capcha",
+						text : "Please check capcha :(",
 						type : "error",
 						allowOutsideClick: false
 					});
@@ -41,7 +51,7 @@ function vote () {
 								type: 'POST',
 								url: 'vote.php',
 								cache: false,
-								data: { 'id' : id , 'style' : style },
+								data: { 'id' : id , 'style' : style , 'capcha' : capcha},
 								success: function(result){
 									switch (result) {
 										case "success" :
