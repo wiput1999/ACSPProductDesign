@@ -1,7 +1,7 @@
 function vote () {
 	var id 		=	$('#id').val();
 	var style	=	$('#style').val();
-	var capcha	=	grecaptcha.getResponse().length;
+	var captcha	=	grecaptcha.getResponse().length;
 
 	if (style == 0) {
 		swal({
@@ -16,7 +16,7 @@ function vote () {
 			type: 'POST',
 			url: 'info.php',
 			cache: false,
-			data: { 'id' : id , 'capcha' : capcha},
+			data: { 'id' : id , 'captcha' : captcha},
 			success: function(result){
 				if( result == "notfound" ) {
 					swal({
@@ -26,11 +26,11 @@ function vote () {
 						allowOutsideClick: false
 					});
 				}
-				//Capcha error
-				else if ( result == "err_capcha") {
+				//Captcha error
+				else if ( result == "err_captcha") {
 					swal({
-						title: "Invalid Capcha",
-						text : "Please check capcha :(",
+						title: "Invalid Captcha",
+						text : "Please check captcha :(",
 						type : "error",
 						allowOutsideClick: false
 					});
@@ -51,7 +51,7 @@ function vote () {
 								type: 'POST',
 								url: 'vote.php',
 								cache: false,
-								data: { 'id' : id , 'style' : style , 'capcha' : capcha},
+								data: { 'id' : id , 'style' : style , 'captcha' : captcha},
 								success: function(result){
 									switch (result) {
 										case "success" :

@@ -1,9 +1,9 @@
 <?php
 	include 'dbc.php';
 
-    $capcha = $_POST['capcha'];
-    if ( $capcha == 0 ) {
-        echo "err_capcha";
+    $captcha = $_POST['captcha'];
+    if ( $captcha == 0 ) {
+        echo "err_captcha";
     }
     else {
         if ( $_SERVER['REQUEST_METHOD'] == "POST")
