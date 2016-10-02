@@ -1,33 +1,34 @@
 <?php
 	include 'dbc.php';
 
-    $captcha = $_POST['captcha'];
-    if ( $captcha == 0 ) {
-        echo "err_captcha";
-    }
-    else {
-        if ( $_SERVER['REQUEST_METHOD'] == "POST")
-        {
-        	$id = $_POST['id'];
-            $stmt = $conn->prepare("SELECT * FROM student WHERE id = ?");
+	$captcha = $_POST['captcha'];
 
-            $stmt->bindParam(1,$id,PDO::PARAM_STR);
-            $stmt->execute();
+	if ( $captcha != 0 ) {
+		if ( $_SERVER['REQUEST_METHOD'] == "POST" )
+		{
+			$id = $_POST['id'];
+			$stmt = $conn->prepare("SELECT * FROM student WHERE id = ?");
 
-            if ( $stmt->rowCount() != 1 ) { // exist
-                echo "notfound";
-            }
-            else {
-            	$data = $stmt->fetch(PDO::FETCH_ASSOC);
+			$stmt->bindParam(1,$id,PDO::PARAM_STR);
+			$stmt->execute();
 
-    	        $name = $data['fname']." ".$data['lname'];
+			if ( $stmt->rowCount() != 1 ) { // exist
+				echo "notfound";
+			}
+			else {
+				$data = $stmt->fetch(PDO::FETCH_ASSOC);
 
-    	        echo $name;
-            }
-        }
-        else {
-        	echo "failed";
-        }
-    }
+				$name = $data['fname']." ".$data['lname'];
+
+				echo $name;
+			}
+		}
+		else {
+			echo "failed";
+		}
+	}
+	else {
+		echo "err_captcha";
+	}
 
 ?>
