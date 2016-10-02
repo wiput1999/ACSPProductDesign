@@ -16,7 +16,7 @@ function vote () {
 			type: 'POST',
 			url: 'info.php',
 			cache: false,
-			data: { 'id' : id , 'captcha' : captcha},
+			data: { 'id' : id },
 			success: function(result){
 				if( result === "notfound" ) {
 					swal({
@@ -42,7 +42,7 @@ function vote () {
 								type: 'POST',
 								url: 'vote.php',
 								cache: false,
-								data: { 'id' : id , 'style' : style , 'captcha' : captcha},
+								data: { 'id' : id , 'style' : style},
 								success: function(result){
 									switch (result) {
 										case "success" :

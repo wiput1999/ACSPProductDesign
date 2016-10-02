@@ -2,9 +2,8 @@
     include 'dbc.php';
 
     $style = $_POST['style'];
-    $captcha = $_POST['captcha'];
 
-    if ( $_SERVER['REQUEST_METHOD'] == "POST" && $style != 0 && $captcha != 0)
+    if ( $_SERVER['REQUEST_METHOD'] == "POST" && $style != 0)
     {
         $id = $_POST['id'];
 
