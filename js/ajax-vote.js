@@ -18,19 +18,10 @@ function vote () {
 			cache: false,
 			data: { 'id' : id , 'captcha' : captcha},
 			success: function(result){
-				if( result == "notfound" ) {
+				if( result === "notfound" ) {
 					swal({
 						title: "โหวตไม่สำเร็จ",
 						text : "ไม่พบรหัสประจำตัวที่ท่านระบุครับ :(",
-						type : "error",
-						allowOutsideClick: false
-					});
-				}
-				//Captcha error
-				else if ( result == "err_captcha") {
-					swal({
-						title: "Invalid Captcha",
-						text : "Please check captcha :(",
 						type : "error",
 						allowOutsideClick: false
 					});
