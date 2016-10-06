@@ -20,7 +20,7 @@ var data_map = [
 $(document).ready(function(){
   var ctx = document.getElementById("ResultChart").getContext("2d");
   var ResultChart = new Chart(ctx, {
-    'type': 'doughnut',
+    'type': 'bar',
       
     'data': {
       'labels': label,
